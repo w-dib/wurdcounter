@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WurdCounter - Ad-free Word Counting Tool</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="first-heading">
+      <img src="/images/logo.svg" class="logo-image" />
+      Wurd<span class="first-heading--special">Counter</span>
+    </div>
+    <div class="container">
+      <textarea
+        class="textarea"
+        placeholder="Write your text to count words..."
+      >
+      </textarea>
+      <div class="numbersarea">
+        <div class="numberinfo">
+          <h2 class="title">Words</h2>
+          <p class="wordcount wordcount--words">0</p>
+        </div>
+
+        <div class="numberinfo">
+          <h2 class="title">Characters</h2>
+          <p class="wordcount wordcount--characters">0</p>
+        </div>
+
+        <div class="numberinfo facebook">
+          <h2 class="title">Facebook</h2>
+          <p class="wordcount wordcount-facebook">0</p>
+        </div>
+
+        <div class="numberinfo">
+          <h2 class="title">Twitter</h2>
+          <p class="wordcount wordcount-twitter">0</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
