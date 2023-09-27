@@ -2,48 +2,58 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WurdCounter - Ad-free Word Counting Tool</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="index.js" defer></script>
+
+    <script src="script.js" defer></script>
+
+    <title>Wurdcount</title>
   </head>
   <body>
-    <div class="first-heading">
+    <div class="heading">
       <img src="/images/logo.svg" class="logo-image" />
-      Wurd<span class="first-heading--special">Counter</span>
+      <h1 class="first-heading">
+        Wurd<span class="first-heading--special">Count</span>
+      </h1>
     </div>
+
     <div class="container">
-      <textarea class="textarea" spellcheck="false" placeholder="Enter your text"></textarea>
+      <textarea
+        class="textarea"
+        spellcheck="false"
+        placeholder="Enter your text"
+      ></textarea>
 
-      </textarea>
-      <div class="numbersarea">
-        <div class="numberinfo">
-          <h2 class="title">Words</h2>
-          <p class="wordcount wordcount--words">0</p>
-        </div>
-
-        <div class="numberinfo">
-          <h2 class="title">Characters</h2>
-          <p class="wordcount wordcount--characters">0</p>
-        </div>
-
-        <div class="numberinfo facebook">
-          <h2 class="title">Facebook</h2>
-          <p class="wordcount wordcount-facebook">0</p>
-        </div>
-
-        <div class="numberinfo">
-          <h2 class="title">Twitter</h2>
-          <p class="wordcount wordcount-twitter">0</p>
-        </div>
-      </div>
+      <section class="stats">
+        <section class="stat">
+          <span class="stat__number stat__number--words">0</span>
+          <h2 class="second-heading">Words</h2>
+        </section>
+        <section class="stat">
+          <span class="stat__number stat__number--characters">0</span>
+          <h2 class="second-heading">Characters</h2>
+        </section>
+        <section class="stat">
+          <span class="stat__number stat__number--twitter">280</span>
+          <h2 class="second-heading">Twitter</h2>
+        </section>
+        <section class="stat">
+          <span class="stat__number stat__number--facebook">2200</span>
+          <h2 class="second-heading">Facebook</h2>
+        </section>
+      </section>
     </div>
+
+    <footer class="footer">
+      <small class="copyright">Made with ❤️ by Walid Dib</small>
+    </footer>
   </body>
 </html>
