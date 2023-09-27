@@ -12,7 +12,12 @@ const inputHandler = () => {
   }
 
   // determine new numbers
-  let numberOfWords = textareaEl.value.split(" ").length;
+  const checkSpace = textareaEl.value.endsWith(" ");
+
+  checkSpace
+    ? (numberOfWords = textareaEl.value.split(" ").length - 1)
+    : (numberOfWords = textareaEl.value.split(" ").length);
+
   if (textareaEl.value.length === 0) {
     numberOfWords = 0;
   }
