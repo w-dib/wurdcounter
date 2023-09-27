@@ -50,10 +50,18 @@ body {
   overflow: hidden;
 }
 
-textarea {
+.textarea {
   all: unset;
-  background-color: white;
-  flex: 2;
+  resize: none;
+  flex: 1.77;
+  font: inherit;
+  padding: 30px 40px;
+  font-size: 22px;
+}
+
+.textarea::placeholder {
+  font-weight: 500;
+  color: #959c9f;
 }
 
 .numbersarea {
@@ -72,10 +80,27 @@ textarea {
   align-items: center;
 }
 
+.numberinfo:nth-child(1),
+.numberinfo:nth-child(2) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.numberinfo:nth-child(2),
+.numberinfo:nth-child(4) {
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
+}
+
 .title {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
   color: #747a7c;
+}
+
+.wordcount {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 10px;
+  color: white;
 }
